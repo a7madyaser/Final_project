@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
         <meta name="description" content="">
-        <title>Hotel Website</title>        
-		
-        <link rel="icon" type="image/png" href="{{ asset('uploads/'.$global_setting_data->favicon) }}">
+        <title>Aladdin Camp</title>        
+        <link rel="icon" type="image/png" href="{{ asset('uploads/logo.png') }}">
+        <!-- <link rel="icon" type="image/png" href="{{ asset('uploads/'.$global_setting_data->favicon) }}"> -->
 
         @include('front.layout.styles')
 
@@ -155,11 +155,7 @@
                                     <a href="{{ route('home') }}" class="nav-link">Home</a>
                                 </li>
 
-                                @if($global_page_data->about_status == 1)
-                                <li class="nav-item">
-                                    <a href="{{ route('about') }}" class="nav-link">{{ $global_page_data->about_heading }}</a>
-                                </li>
-                                @endif
+
 
                                 <li class="nav-item">
                                     <a href="javascript:void;" class="nav-link dropdown-toggle">Room & Suite</a>
@@ -171,6 +167,15 @@
                                         @endforeach
                                     </ul>
                                 </li>
+
+
+
+                                @if($global_page_data->blog_status == 1)
+                                <li class="nav-item">
+                                    <a href="{{ route('blog') }}" class="nav-link">{{ $global_page_data->blog_heading }}</a>
+                                </li>
+                                @endif
+
 
 
                                 @if($global_page_data->photo_gallery_status == 1 || $global_page_data->video_gallery_status == 1)
@@ -194,10 +199,9 @@
                                 </li>
                                 @endif
 
-
-                                @if($global_page_data->blog_status == 1)
+                                @if($global_page_data->about_status == 1)
                                 <li class="nav-item">
-                                    <a href="{{ route('blog') }}" class="nav-link">{{ $global_page_data->blog_heading }}</a>
+                                    <a href="{{ route('about') }}" class="nav-link">{{ $global_page_data->about_heading }}</a>
                                 </li>
                                 @endif
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
 
-    <link rel="icon" type="image/png" href="uploads/favicon.png">
+    <link rel="icon" type="image/png" href="uploads/logo.png">
 
     <title>Admin Panel</title>
 
@@ -25,7 +25,7 @@
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                         <div class="card card-primary border-box">
                             <div class="card-header card-header-auth">
-                                <h4 class="text-center">Admin Panel Login</h4>
+                                <h4 class="text-center"> Aladdin Camp l Login</h4>
                             </div>
                             <div class="card-body card-body-auth">
 

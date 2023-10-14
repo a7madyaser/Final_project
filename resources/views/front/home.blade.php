@@ -96,7 +96,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="main-header">Rooms and Suites</h2>
+                <h2 class="main-header">Rooms</h2>
             </div>
         </div>
         <div class="row">
@@ -140,7 +140,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="main-header">Our Happy Clients</h2>
+                <h2 class="main-header">Reviews</h2>
             </div>
         </div>
         <div class="row">
@@ -175,7 +175,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="main-header">Latest Posts</h2>
+                <h2 class="main-header">Tours</h2>
             </div>
         </div>
         <div class="row">
@@ -203,7 +203,6 @@
                 </div>
             </div>
             @endforeach
-            
         </div>
     </div>
 </div>
