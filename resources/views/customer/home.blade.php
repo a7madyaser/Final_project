@@ -1,6 +1,6 @@
 @extends('customer.layout.app')
 
-@section('heading', 'Dashboard')
+@section('heading','Dashboard')
 
 @section('main_content')
 <div class="row">

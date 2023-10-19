@@ -10,7 +10,7 @@
                 <li class="nav-link">
                     <a href="{{ route('home') }}" class="btn btn-warning">Front End</a>
                 </li>
-                <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                <li class="dropdown"><a href="#" role="button" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"  aria-haspopup="true" aria-expanded="false" v-pre>
                     
                     @if(Auth::guard('customer')->user()->photo == '')
                     <img alt="image" src="{{ asset('uploads/default.png') }}" class="rounded-circle mr-1">
@@ -30,3 +30,23 @@
                 </li>
             </ul>
         </nav>
+        <script>
+            $(document).ready(function() {
+
+                var dropdownTrigger = $('.nav-link-user');
+                var dropdownMenu = $('.dropdown-menu');
+            
+                
+                dropdownTrigger.click(function(e) {
+                    e.preventDefault(); 
+                    dropdownMenu.toggleClass('show'); 
+                });
+            
+
+                $(document).on('click', function(event) {
+                    if (!$(event.target).closest('.dropdown').length) {
+                        dropdownMenu.removeClass('show');
+                    }
+                });
+            });
+            </script>
