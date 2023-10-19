@@ -218,7 +218,7 @@
                                                 $t1 = strtotime($d1_new);
                                                 $t2 = strtotime($d2_new);
                                                 $diff = ($t2-$t1)/60/60/24;
-                                                echo '$'.$room_data->price*$diff;
+                                                echo 'JD'.$room_data->price*$diff;
                                             @endphp
                                         </td>
                                     </tr>
@@ -228,7 +228,7 @@
                                 @endphp                                
                                 <tr>
                                     <td><b>Total:</b></td>
-                                    <td class="p_price"><b>${{ $total_price }}</b></td>
+                                    <td class="p_price"><b>JD{{ $total_price }}</b></td>
                                 </tr>
                             </tbody>
                         </table>

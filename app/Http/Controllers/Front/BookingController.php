@@ -473,23 +473,11 @@ class BookingController extends Controller
             $message .= '<br>Children: ' . $arr_reservation_children[$i] . '<br>';
         }
 
-        $customer_email = Auth::guard('customer')->user()->email;
-
-        \Mail::to($customer_email)->send(new Websitemail($subject, $message));
-
         session()->forget('reservation_room_id');
         session()->forget('reservation_checkin_date');
         session()->forget('reservation_checkout_date');
         session()->forget('reservation_adult');
         session()->forget('reservation_children');
-        session()->forget('billing_name');
-        session()->forget('billing_email');
-        session()->forget('billing_phone');
-        session()->forget('billing_country');
-        session()->forget('billing_address');
-        session()->forget('billing_state');
-        session()->forget('billing_city');
-        session()->forget('billing_zip');
 
         return redirect()->route('home')->with('success', 'Payment is successful');
 
@@ -500,10 +488,13 @@ class BookingController extends Controller
         $request->validate([
             'payment_method' => 'required', 
         ]);
-
+        session()->forget('reservation_room_id');
+        session()->forget('reservation_checkin_date');
+        session()->forget('reservation_checkout_date');
+        session()->forget('reservation_adult');
+        session()->forget('reservation_children');
         return redirect()->route('home')->with('success', 'Payment is successful');
     }
-
 
 
     

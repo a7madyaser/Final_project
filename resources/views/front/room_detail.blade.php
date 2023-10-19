@@ -97,7 +97,7 @@
                     <div class="widget">
                         <h2>Room Price per Night</h2>
                         <div class="price">
-                            ${{ $single_room_data->price }}
+                        JD{{ $single_room_data->price }}
                         </div>
                     </div>
                     <div class="widget">
