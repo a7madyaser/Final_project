@@ -36,7 +36,7 @@ class SubscriberController extends Controller
             $message .= $verification_link;
             $message .= '</a>';
 
-            \Mail::to($request->email)->send(new Websitemail($subject,$message));
+            // \Mail::to($request->email)->send(new Websitemail($subject,$message));
 
             return response()->json(['code'=>1,'success_message'=>'Please check your email to confirm subscription']);
         }
