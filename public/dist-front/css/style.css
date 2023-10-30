@@ -980,19 +980,19 @@ select {
 	margin-top: 30px;
 }
 .testimonial-carousel .owl-dots .owl-dot {
-	width: 24px;
-	height: 24px;
+	width: 18px;
+	height: 18px;
 	background: #785a10;
-	border: 7px solid #fff;
+	border: 7px solid #e8e8e8;
 	border-radius: 50%;
 	display: inline-block;
 	margin: 0 5px;
 }
 .testimonial-carousel .owl-dots .owl-dot.active {
-	width: 24px;
-	height: 24px;
+	width: 18px;
+	height: 18px;
 	background: #313131;
-	border: 7px solid #fff;
+	border: 7px solid #e8e8e8;
 }
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next {
