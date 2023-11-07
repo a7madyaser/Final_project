@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6b2f2b4ddf40d5b79a7e410de471fb83ac7a1c09',
+        'reference' => '02f2526d81f896ad3043cd7b94a0e7aa86b74ffb',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -403,7 +403,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6b2f2b4ddf40d5b79a7e410de471fb83ac7a1c09',
+            'reference' => '02f2526d81f896ad3043cd7b94a0e7aa86b74ffb',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -500,9 +500,9 @@
             'dev_requirement' => true,
         ),
         'monolog/monolog' => array(
-            'pretty_version' => '2.9.1',
-            'version' => '2.9.1.0',
-            'reference' => 'f259e2b15fb95494c83f52d3caad003bbf5ffaa1',
+            'pretty_version' => '2.9.2',
+            'version' => '2.9.2.0',
+            'reference' => '437cb3628f4cf6042cc10ae97fc2b8472e48ca1f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../monolog/monolog',
             'aliases' => array(),
@@ -542,9 +542,9 @@
             'dev_requirement' => false,
         ),
         'nette/utils' => array(
-            'pretty_version' => 'v4.0.2',
-            'version' => '4.0.2.0',
-            'reference' => 'cead6637226456b35e1175cc53797dd585d85545',
+            'pretty_version' => 'v4.0.3',
+            'version' => '4.0.3.0',
+            'reference' => 'a9d127dd6a203ce6d255b2e2db49759f7506e015',
             'type' => 'library',
             'install_path' => __DIR__ . '/../nette/utils',
             'aliases' => array(),
@@ -760,8 +760,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0.0 || 2.0.0 || 3.0.0',
-                1 => '1.0|2.0|3.0',
+                0 => '1.0|2.0|3.0',
+                1 => '1.0.0 || 2.0.0 || 3.0.0',
             ),
         ),
         'psr/simple-cache' => array(
